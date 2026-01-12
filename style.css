@@ -1,0 +1,40 @@
+/* 
+   Tailwind CSS is used via CDN for styling. 
+   Custom CSS below is for specific animations and tweaks.
+*/
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5; /* Primary Color */
+}
+
+/* Utilities for Glassmorphism if needed */
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Input Focus Styles */
+input:focus, select:focus, textarea:focus {
+    border-color: #4f46e5 !important; /* Primary color override */
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
